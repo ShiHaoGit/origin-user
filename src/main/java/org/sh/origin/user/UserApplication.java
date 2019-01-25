@@ -1,4 +1,4 @@
-package com.origin.user.user;
+package org.sh.origin.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
