@@ -1,4 +1,4 @@
-package com.origin.user.user;
+package org.sh.origin.user;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +11,7 @@ public class UserApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!");
 	}
 
 }
