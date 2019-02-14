@@ -1,5 +1,7 @@
 package org.sh.origin.user.controller;
 
+import com.netflix.discovery.DiscoveryManager;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,8 +14,9 @@ public class UserController {
     return "test";
   }
 
-  public static void main(String[] args){
-    Long l = 1L;
-    System.out.println( l.equals(null));
+  @GetMapping(value = "/offline")
+  public void offLine(){
+    DiscoveryManager.getInstance().shutdownComponent();
   }
+
 }
