@@ -12,4 +12,8 @@ public class UserController {
     return "test";
   }
 
+  public static void main(String[] args){
+    Long l = 1L;
+    System.out.println( l.equals(null));
+  }
 }
