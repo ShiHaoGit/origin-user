@@ -6,4 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.183.128:10000/eureka/
+      defaultZone: http://192.168.183.128:10001/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    leaseExpirationDurationInSeconds: 30
